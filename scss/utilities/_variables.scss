@@ -1,5 +1,32 @@
 // create variables for fonts, breakpoints, and colors.
 
 
+//Buttons
+$warning-button-color: #ED7461;
+$info-button-color: #8161ED;
+$error-button-color: #ED616D;
+$success-button-color: #61ED80;
+$default-button-color: #61D7ED;
+
+//Grid 
+$grid-col-12: #79CDBA;
+$grid-col-6: #398DA7;
+$grid-col-4: #6DCFE9;
+$grid-col-3: #E89CF7;
+$grid-col-5: #61ED80;
+$grid-col-7: #DD929B;
+$grid-col-8: #E07861;
+
+//Button
+$button-colors: (
+	'defalut': #61D7ED,
+	'success': #61ED80,
+	'error': #ED616D,
+	'warning': #ED7461,
+	'info': #8161ED
+);
+
+
+
 
 
