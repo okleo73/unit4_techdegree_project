@@ -1,0 +1,31 @@
+//Navigation Styles
+
+.nav {
+	@include mobile-styles;
+	list-style: none;
+	padding: 0px;
+	@include mq {
+		flex-direction:row;
+	}
+	&__item a {
+		color: black;
+		text-decoration: none;
+		&:hover {
+			background-color: $nav-color-light;
+			color: darkslategray;
+			transition: background-color .5s ease-in;
+		}
+	}
+	&-item {
+		margin: 10px 0; 
+	}
+	& a {
+		display: block;
+		padding: 10px 16px;
+	}
+}
+
+
+
+
+

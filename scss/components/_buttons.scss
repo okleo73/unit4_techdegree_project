@@ -1,5 +1,35 @@
 //Buttons placeholder
 
+.theme__colors {
+	margin: 10px auto;
+	padding: 10px 0;
+	text-transform: uppercase;
+	border: none;
+	width: 99%;
+	border-radius: 5px;
+}
+
+.btn {
+	&--default,
+	&--success,
+	&--error,
+	&--warning,
+	&--info {
+		color: white;
+		@include mq {
+			margin: 0 7px;
+			padding: 5px 30px;
+		}
+	}
+}
+
+.btn {
+	@each $key, $color in $button-colors {
+		&--#{$key} {
+			background-color: $color;
+		}
+	}
+}
 
 
 

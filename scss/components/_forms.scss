@@ -1,0 +1,38 @@
+//Forms
+
+%form-border {
+	border-bottom: solid;
+	border-color: #79CDBA;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-radius: 2px;
+}
+.form {
+	@include mobile-styles;
+	margin-top: 18px;
+	margin: 18px 0;
+	&__input {
+		//border-bottom: solid;
+		//border-color: #79CDBA;
+		padding: 10px 0;
+		margin: 10px;
+		//border-top: none;
+		//border-left: none;
+		//border-right: none;
+		//border-radius: 2px;
+		@extend %form-border;
+	}
+	&__label--hidden {
+	    display: none;
+	}
+}
+
+.form__label--hidden {
+//    display: none;
+}
+
+.forms {
+//	margin: 18px 0;
+}
+

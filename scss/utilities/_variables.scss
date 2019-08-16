@@ -26,6 +26,30 @@ $button-colors: (
 	'info': #8161ED
 );
 
+//Navigation
+$nav-color: #79CDBA;
+$nav-color-light: lighten($nav-color, 15%);
+
+//Buttons
+$button-colors: (
+	'default': #61D7ED,
+	'success': #61ED80,
+	'error': #ED616D,
+	'warning': #ED7461,
+	'info': #8161ED,
+);
+
+//Grid
+$grid-colors: (
+  'col--12': #79CDBA,
+  'col--6': #398DA7,
+  'col--4': #6DCFE9,
+  'col--3': #E89CF7,
+  'col--5': #61ED80,
+  'col--7': #DD929B,
+  'col--8': #E07861,
+);
+
 
 
 

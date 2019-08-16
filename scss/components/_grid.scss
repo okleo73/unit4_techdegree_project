@@ -8,61 +8,141 @@
 
 
 // grid base class
-.grid {
+//.grid {
 
   // .grid__row
-  &__row {
-    padding: 1em 10px;
-    display: flex;
-    flex-direction: column;
+//  &__row {
+//    padding: 1em 10px;
+//    display: flex;
+//    flex-direction: column;
 
     // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: 768px) {
-      flex-direction: row;
-    }
-  }
+//    @media (min-width: 768px) {
+//      flex-direction: row;
+//    }
+//  }
 
   // .grid__col
-  &__col {
+//  &__col {
 
     // create grid columns dynamically
     // loop through each column size
-    @for $i from 1 through 12 {
+//    @for $i from 1 through 12 {
 
       // concatenate CSS selector, ie when $i = 1,
       // selector would be .grid__col--1
-      &--#{$i} {
+//      &--#{$i} {
 
         // base styles applied to all grid columns 
         // NOTE: could be converted to a placeholder, along with margin
         // from the  media query
-        margin-top: 10px;
-        flex-basis: 100%;
+//        margin-top: 10px;
+//        flex-basis: 100%;
 
         // NOTE: replace with media query mixin if aiming for exceeds
-        @media (min-width: 768px) {
+//        @media (min-width: 768px) {
 
           // base stlyes applied to all grid columns
-          margin-top: 0;
+//          margin-top: 0;
 
           // make column width a percentage of the column number / total columns
-          flex-basis: #{$i / 12 * 100 + "%"} ;
-        }
-      }
-    }
-  }
-}
+//          flex-basis: #{$i / 12 * 100 + "%"} ;
+//        }
+//      }
+//    }
+//  }
+//}
 
 // targets all elements with classes that begin with grid__col
-[class^=grid__col] {
+//[class^=grid__col] {
   // grid__col + grid__col, targets two sibling columns
-  & + & {
+//  & + & {
 
     // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: 768px) {
+//    @media (min-width: 768px) {
 
       // add grid gutter
-      margin-left: 10px;
+//      margin-left: 10px;
+//    }
+//  }
+//}
+
+//===============================
+// MY STYLES
+//===============================
+
+
+
+
+.grid {
+  @each $key, $color in $grid-colors {
+    &__#{$key}.theme__colors {
+      background-color: $color;
+      @include btn-grid-styles;
+      @include btn-mrgn;
     }
   }
 }
+
+.grid__col--12.theme__colors {
+  @include mq {
+    padding-left: 40%;
+  }
+}
+.grid__col--7.theme__colors.centered {
+  @include mq {
+    width: 70%;
+  }
+}
+
+.grid {
+  &__row {
+  @include mobile-styles;
+  display: flex;
+  flex-direction: column;
+    @include mq {
+      flex-direction: row;
+      justify-content: center;
+    } 
+  }
+  &__col {
+    &--12 {
+      @include mq {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+    &--3 {
+        margin: 0 auto;
+        @include mq {
+          margin-left: 10px;
+        }
+    }
+    &--4 {
+      flex: 1 0 0;
+    }
+    &--6 {
+      margin: 0 auto;
+    }
+    &--8 {
+      flex: 2 0 0;
+    }
+    &--9 {
+        text-align: center;
+    }
+    &--4 .img--avatar {
+      width: 50%;
+      margin: 5px auto;
+    }
+  }
+}
+
+
+.grid__row {
+  margin: 30px 0;
+}
+
+
+
+
+

@@ -1,3 +1,21 @@
 // Create mixins for media quereis and flexbox settings
 
-
+@mixin mobile-styles {
+	display: flex;
+	flex-direction: column;
+	@content;
+}
+@mixin btn-grid-styles {
+	text-align: center;
+	color: darkgrey;
+	@content;
+}
+@mixin btn-mrgn {
+	margin: 5px 5px;
+	@content;
+}
+@mixin mq {
+	@media (min-width: 600px) {
+		@content;
+	}
+}
