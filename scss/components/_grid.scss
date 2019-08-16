@@ -55,7 +55,7 @@
 
 // targets all elements with classes that begin with grid__col
 [class^=grid__col] {
-   grid__col + grid__col, targets two sibling columns
+  // grid__col + grid__col, targets two sibling columns
   & + & {
 
     // NOTE: replace with media query mixin if aiming for exceeds
@@ -79,7 +79,9 @@
     &__#{$key}.theme__colors {
       background-color: $color;
       @include btn-grid-styles;
-//      @include btn-mrgn;
+      @include mq {
+          text-align: center;
+        }
     }
   }
 }
@@ -92,6 +94,11 @@
 .grid__col--7.theme__colors.centered {
   @include mq {
     width: 70%;
+  }
+}
+.grid__col--5.theme__colors {
+  @include mq {
+    width: 74%;
   }
 }
 

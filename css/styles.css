@@ -498,45 +498,73 @@ ul li {
 }
 
 @media (min-width: 600px) {
-  [class^=grid__col] grid__col + grid__col, targets two sibling columns [class^=grid__col] + [class^=grid__col] {
+  [class^=grid__col] + [class^=grid__col] {
     margin-left: 10px;
   }
 }
 
 .grid__col--12.theme__colors {
   background-color: #79CDBA;
-  text-align: center;
   color: darkgrey;
+}
+@media (min-width: 600px) {
+  .grid__col--12.theme__colors {
+    text-align: center;
+  }
 }
 .grid__col--6.theme__colors {
   background-color: #398DA7;
-  text-align: center;
   color: darkgrey;
+}
+@media (min-width: 600px) {
+  .grid__col--6.theme__colors {
+    text-align: center;
+  }
 }
 .grid__col--4.theme__colors {
   background-color: #6DCFE9;
-  text-align: center;
   color: darkgrey;
+}
+@media (min-width: 600px) {
+  .grid__col--4.theme__colors {
+    text-align: center;
+  }
 }
 .grid__col--3.theme__colors {
   background-color: #E89CF7;
-  text-align: center;
   color: darkgrey;
+}
+@media (min-width: 600px) {
+  .grid__col--3.theme__colors {
+    text-align: center;
+  }
 }
 .grid__col--5.theme__colors {
   background-color: #61ED80;
-  text-align: center;
   color: darkgrey;
+}
+@media (min-width: 600px) {
+  .grid__col--5.theme__colors {
+    text-align: center;
+  }
 }
 .grid__col--7.theme__colors {
   background-color: #DD929B;
-  text-align: center;
   color: darkgrey;
+}
+@media (min-width: 600px) {
+  .grid__col--7.theme__colors {
+    text-align: center;
+  }
 }
 .grid__col--8.theme__colors {
   background-color: #E07861;
-  text-align: center;
   color: darkgrey;
+}
+@media (min-width: 600px) {
+  .grid__col--8.theme__colors {
+    text-align: center;
+  }
 }
 
 @media (min-width: 600px) {
@@ -548,6 +576,12 @@ ul li {
 @media (min-width: 600px) {
   .grid__col--7.theme__colors.centered {
     width: 70%;
+  }
+}
+
+@media (min-width: 600px) {
+  .grid__col--5.theme__colors {
+    width: 74%;
   }
 }
 
@@ -596,7 +630,7 @@ ul li {
 
 @media (max-width: 600px) {
   .grid__row {
-    margin: 30px 0;
+    margin: 15px 0;
   }
 }
 
@@ -635,6 +669,7 @@ ul li {
   background-color: #b1e2d7;
   color: darkslategray;
   transition: background-color 0.5s ease-in;
+  border-radius: 5px;
 }
 .nav-item {
   margin: 10px 0;
@@ -651,15 +686,15 @@ ul li {
 }
 
 .theme__colors {
-  margin: 10px auto;
+  margin: 6px auto;
   padding: 10px 0;
-  text-transform: uppercase;
   border: none;
   width: 99%;
   border-radius: 5px;
 }
 
 .btn--default, .btn--success, .btn--error, .btn--warning, .btn--info {
+  text-transform: uppercase;
   color: white;
 }
 @media (min-width: 600px) {
