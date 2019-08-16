@@ -15,7 +15,12 @@
 	@content;
 }
 @mixin mq {
-	@media (min-width: 600px) {
+	@media (min-width: $tablet) {
 		@content;
+	}
+}
+@mixin max {
+	@media (max-width: 600px) {
+		margin: 30px 0;
 	}
 }

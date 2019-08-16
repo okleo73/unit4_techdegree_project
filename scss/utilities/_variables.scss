@@ -17,15 +17,6 @@ $grid-col-5: #61ED80;
 $grid-col-7: #DD929B;
 $grid-col-8: #E07861;
 
-//Button
-$button-colors: (
-	'defalut': #61D7ED,
-	'success': #61ED80,
-	'error': #ED616D,
-	'warning': #ED7461,
-	'info': #8161ED
-);
-
 //Navigation
 $nav-color: #79CDBA;
 $nav-color-light: lighten($nav-color, 15%);
@@ -49,6 +40,10 @@ $grid-colors: (
   'col--7': #DD929B,
   'col--8': #E07861,
 );
+
+//Media Queries
+$tablet: 600px;
+
 
 
 
