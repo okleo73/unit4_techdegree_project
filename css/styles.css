@@ -356,7 +356,7 @@ ul li {
 }
 @media (min-width: 769px) {
   ul li {
-    margin: 10px 25px;
+    margin: 10px;
   }
 }
 
