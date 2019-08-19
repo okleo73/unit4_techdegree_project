@@ -594,7 +594,6 @@ ul li {
 @media (min-width: 600px) {
   .grid__row {
     flex-direction: row;
-    justify-content: center;
   }
 }
 @media (min-width: 600px) {
@@ -666,7 +665,7 @@ ul li {
   text-decoration: none;
 }
 .nav__item a:hover {
-  background-color: #b1e2d7;
+  background-color: #79CDBA;
   color: darkslategray;
   transition: background-color 0.5s ease-in;
   border-radius: 5px;
@@ -705,19 +704,19 @@ ul li {
 }
 
 .btn--default {
-  background-color: #61D7ED;
+  background-color: #a6e8f5;
 }
 .btn--success {
-  background-color: #61ED80;
+  background-color: #a6f5b7;
 }
 .btn--error {
-  background-color: #ED616D;
+  background-color: #f5a6ac;
 }
 .btn--warning {
-  background-color: #ED7461;
+  background-color: #f5b0a6;
 }
 .btn--info {
-  background-color: #8161ED;
+  background-color: #b8a6f5;
 }
 
 .form__input {

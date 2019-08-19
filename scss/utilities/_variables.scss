@@ -8,6 +8,12 @@ $error-button-color: #ED616D;
 $success-button-color: #61ED80;
 $default-button-color: #61D7ED;
 
+$warning-button-light: lighten($warning-button-color, 15%);
+$info-button-light: lighten($info-button-color, 15%);
+$error-button-light: lighten($error-button-color, 15%);
+$success-button-light: lighten($success-button-color, 15%);
+$default-button-light: lighten($default-button-color, 15%);
+
 //Grid 
 $grid-col-12: #79CDBA;
 $grid-col-6: #398DA7;
@@ -19,16 +25,19 @@ $grid-col-8: #E07861;
 
 //Navigation
 $nav-color: #79CDBA;
-$nav-color-light: lighten($nav-color, 15%);
+//$nav-color-light: lighten($nav-color, 15%);
 
 //Buttons
 $button-colors: (
-	'default': #61D7ED,
-	'success': #61ED80,
-	'error': #ED616D,
-	'warning': #ED7461,
-	'info': #8161ED,
+	'default': $default-button-light,
+	'success': $success-button-light,
+	'error': $error-button-light,
+	'warning': $warning-button-light,
+	'info': $info-button-light,
 );
+// $btn-colors-light: lighten($button-colors, 15%);
+
+
 
 //Grid
 $grid-colors: (
@@ -43,6 +52,8 @@ $grid-colors: (
 
 //Media Queries
 $tablet: 600px;
+
+
 
 
 
