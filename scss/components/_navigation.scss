@@ -6,7 +6,7 @@
 	padding: 0px;
 	@include mq {
 		flex-direction:row;
-		flex-wrap: wrap;
+	//	flex-wrap: wrap;
 	}
 	&__item a {
 		color: black;
