@@ -29,12 +29,19 @@ $nav-color: #79CDBA;
 
 //Buttons
 $button-colors: (
-	'default': $default-button-light,
-	'success': $success-button-light,
-	'error': $error-button-light,
-	'warning': $warning-button-light,
-	'info': $info-button-light,
+  'default': #61D7ED,
+  'success': #61ED80,
+  'error': #ED616D,
+  'warning': #ED7461,
+  'info': #8161ED,
 );
+//$button-colors: (
+	//'default': $default-button-light,
+	//'success': $success-button-light,
+	//'error': $error-button-light,
+	//'warning': $warning-button-light,
+	//'info': $info-button-light,
+//);
 // $btn-colors-light: lighten($button-colors, 15%);
 
 

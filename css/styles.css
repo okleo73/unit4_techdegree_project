@@ -702,21 +702,36 @@ ul li {
     padding: 5px 30px;
   }
 }
-
-.btn--default {
+.btn--default:hover {
   background-color: #a6e8f5;
 }
-.btn--success {
+.btn--success:hover {
   background-color: #a6f5b7;
 }
-.btn--error {
+.btn--error:hover {
   background-color: #f5a6ac;
 }
-.btn--warning {
+.btn--warning:hover {
   background-color: #f5b0a6;
 }
-.btn--info {
+.btn--info:hover {
   background-color: #b8a6f5;
+}
+
+.btn--default {
+  background-color: #61D7ED;
+}
+.btn--success {
+  background-color: #61ED80;
+}
+.btn--error {
+  background-color: #ED616D;
+}
+.btn--warning {
+  background-color: #ED7461;
+}
+.btn--info {
+  background-color: #8161ED;
 }
 
 .form__input {

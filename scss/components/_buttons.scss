@@ -21,6 +21,21 @@
 			padding: 5px 30px;
 		}
 	}
+	&--default:hover {
+		background-color: $default-button-light;
+	}
+	&--success:hover {
+		background-color: $success-button-light;
+	}
+	&--error:hover {
+		background-color: $error-button-light;
+	}
+	&--warning:hover {
+		background-color: $warning-button-light;
+	}
+	&--info:hover {
+		background-color: $info-button-light;
+	}
 }
 
 .btn {
